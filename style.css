@@ -484,6 +484,44 @@ h1.section-title.title-box {
 }
 .info-table tbody tr:hover { background-color: #fafafa; }
 
+/* Responsive Table CV */
+@media (max-width: 600px) {
+  .info-table,
+  .info-table thead,
+  .info-table tbody,
+  .info-table tr,
+  .info-table th,
+  .info-table td {
+    display: block;
+    width: 100%;
+  }
+  .info-table thead {
+    display: none;
+  }
+  .info-table tr {
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    background: #fff;
+    padding: 0.5rem 0.7rem;
+  }
+  .info-table td {
+    padding: 10px 8px;
+    border: none;
+    position: relative;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .info-table td:before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #007acc;
+    display: block;
+    margin-bottom: 2px;
+    font-size: 0.95em;
+  }
+}
+
 /* ==== KHUSUS: HOVER CARD GRID 2X2 ==== */
 .cv-grid-2x2 .cv-card:hover {
   background: #fff;
